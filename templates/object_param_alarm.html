@@ -1,0 +1,18 @@
+<div class="opa">
+    <span style="font-weight: bold">Объект: {obj}</span><br/>
+    <div class="outline">
+        Текущие значения параметров:<br/>
+        <div id ="{id_obj}">
+            <iframe onload="reloadObj({id_obj}, 'one')"></iframe>
+            {alarms}
+        </div>
+    </div><br/>
+    <div class="outline">
+        Непринятые аварии:<br/>
+        <form id="approved" method="POST" enctype="multipart/form-data">
+            {no_approved_alarms}
+        </form>
+    
+    </div>
+</div>
+<br/>

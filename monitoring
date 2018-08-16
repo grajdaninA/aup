@@ -1,0 +1,4 @@
+#!/bin/bash
+spath=/srv/www/www/debugrcc/RCC-1.0
+/usr/bin/php $spath/monitoring.php > $spath/log/bash_monitoring.log
+#echo stop > $spath/log/bash_monitoring.log

@@ -1,0 +1,88 @@
+/* 
+    Document   : style
+    Created on : 10.09.2011, 10:39:43
+    Author     : grajdanin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+
+}
+SPAN.outline {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 0 10px;
+    background: lightgray;
+    cursor: pointer;
+}
+span.alarm{
+    
+}
+div.alarm{
+    width: 200px;
+    height: 18px;
+    font-weight: bold;
+    float: bottom;
+}
+div.nameObj{
+    width: 200px;
+    height: 36px;
+}
+div.disp{
+    width: 200px;
+    height: 36px;
+    
+}
+
+div.object{
+    width: 200px;
+    height: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+div.outline{
+    overflow: hidden;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+div.opa{
+    width: 95%;
+    height: 98%;
+    margin: auto;
+}
+
+br.pagebreak {
+      display: none;
+}
+div.square{
+    border: 1px solid grey;
+    padding: 1px;
+    width: 200px;
+    height: 90px;
+    float: left;
+    margin: 10px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+@media print {
+      p {
+        page-break-inside: avoid;
+      }
+      br.pagebreak {
+        display: block;
+        page-break-after: always;
+      }
+}
